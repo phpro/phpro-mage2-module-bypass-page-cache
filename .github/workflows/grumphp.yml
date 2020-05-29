@@ -1,0 +1,14 @@
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Checking coding standards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        uses: php-actions/composer@v1
+        with:
+          command: composer
+          args: install --no-suggest --prefer-dist
+      - run: ./vendor/bin/grumphp run

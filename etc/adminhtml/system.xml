@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="system">
+            <group id="full_page_cache">
+                <field id="bypass_enabled" translate="label" type="select" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="10">
+                    <label>Enable Page Cache Bypass</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                    <depends>
+                        <field id="caching_application">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
