@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.0]
+- Made module opensource
+
 ## [1.0.3] - 2019-10-02
 ### Added
 - Made compatible with PHP 7.3
