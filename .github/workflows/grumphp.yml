@@ -10,6 +10,7 @@ jobs:
         id: composer-cache
         run: |
           echo "::set-output name=dir::$(composer config cache-files-dir)"
+
       - name: Cache Composer Downloads
         uses: actions/cache@v1
         with:
@@ -17,6 +18,7 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             ${{ runner.os }}-composer-
+
       - name: Cache PHP dependencies
         uses: actions/cache@v1
         with:
