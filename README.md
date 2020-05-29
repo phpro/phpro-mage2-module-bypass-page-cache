@@ -1,3 +1,5 @@
+![](https://github.com/phpro/phpro-mage2-module-bypass-page-cache/workflows/.github/workflows/grumphp.yml/badge.svg)
+
 # Bypass Page Cache for Magento 2
 
 This module will allow you to bypass the full page cache by adding a specific header to the request.
