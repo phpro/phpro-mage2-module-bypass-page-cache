@@ -2,7 +2,7 @@
 
 # Bypass Page Cache for Magento 2
 
-This module will allow you to bypass the full page cache by adding a specific header to the request.
+In some cases we want to be able to bypass Magento's full page cache. For example, when profiling a page using Blackfire, we want to test the performance of the page without full page cache.
 
 ## Installation
 
