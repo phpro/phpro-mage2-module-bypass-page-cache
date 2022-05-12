@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.0.1]
+
+- PHP 8.0 compatibility added
+
 ## [3.0.0]
 
 - Added Magento 2.4 support
